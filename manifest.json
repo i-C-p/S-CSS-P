@@ -1,6 +1,6 @@
   {
-    "name": "S-CSS-P",
-    "version": "1.1.7",
+    "name": "S-CSS-P Advanced",
+    "version": "1.1.7-OFF",
     "description": "A stylesheet picker for The SCP Wiki",
     "manifest_version": 2,
 	"permissions": [
@@ -9,7 +9,20 @@
 		"http://scp-wiki.wikidot.com/",
 		"https://*.scp-wiki.net/",
 		"https://scp-wiki.wikidot.com/",
-		"http://scpnet.org/"
+		"http://scpnet.org/",
+		"http://scp-wiki-cn.wikidot.com/",
+		"http://scpfoundation.net/",
+		"http://scp-kr.wikidot.com/",
+		"http://fondationscp.wikidot.com/",
+		"http://scp-wiki.net.pl/",
+		"http://lafundacionscp.wikidot.com/",
+		"http://scp-th.wikidot.com/",
+		"http://ja.scp-wiki.net/",
+		"http://scp-wiki-de.wikidot.com/",
+		"http://fondazionescp.wikidot.com/",
+		"http://scp-ukrainian.wikidot.com/",
+		"http://scp-pt-br.wikidot.com/"
+		
 	],
 	"applications": {
 		"gecko": {
@@ -19,7 +32,7 @@
 	},
 	"content_scripts": [
 		{
-		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*", "http://scpnet.org/*"],
+		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*", "http://scpnet.org/*", "http://scp-wiki-cn.wikidot.com/*", "http://scpfoundation.net/*", "http://scp-kr.wikidot.com/*", "http://fondationscp.wikidot.com/*", "http://scp-wiki.net.pl/*", "http://lafundacionscp.wikidot.com/*", "http://scp-th.wikidot.com/*", "http://ja.scp-wiki.net/*", "http://scp-wiki-de.wikidot.com/*", "http://fondazionescp.wikidot.com/*", "http://scp-ukrainian.wikidot.com/*", "http://scp-pt-br.wikidot.com/*"],
 		"js": ["main.js", "options.js"],
 		"all_frames": true,
 		"run_at": "document_end"
